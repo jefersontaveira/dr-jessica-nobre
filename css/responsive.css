@@ -81,6 +81,10 @@
     }
     
     /* Hero e Tipografia */
+    .hero, .cta {
+        background-attachment: scroll; /* Corrige bug do iOS que dá zoom gigante na foto */
+    }
+
     .hero h1 {
         font-size: 2.2rem;
     }
