@@ -1,0 +1,152 @@
+/* CSS Exclusivo para Responsividade (Media Queries) */
+
+/* Telas Grandes / Tablets (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .contact-info {
+        gap: 30px;
+    }
+}
+
+/* Telas Médias / Mobile Grande (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Navbar Toggle */
+    .nav-menu {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 0.4s ease;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        top: 0;
+    }
+    
+    .nav-links {
+        font-size: 1.5rem;
+        padding: 20px;
+        margin: 10px 0;
+        display: block;
+    }
+    
+    .menu-toggle {
+        display: block;
+        z-index: 1000;
+    }
+    
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .logo-img {
+        height: 60px;
+    }
+    
+    /* Hero e Tipografia */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .cta h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    /* Seções */
+    .section-dark, .section-light {
+        padding: 60px 0;
+    }
+    
+    .sobre-content, .jessica-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Telas Pequenas / Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .info-item {
+        width: 260px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+}
